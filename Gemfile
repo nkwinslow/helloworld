@@ -1,4 +1,7 @@
 source 'https://rubygems.org'
+  gem 'redis'
+  gem 'rubocop'
+  gem 'dotenv-rails', :groups => [:development, :test]
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -32,6 +35,13 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+source "https://xvYsU8J_ySFNyjXaBUyM@gem.fury.io/nuvi/" do
+  gem "zohar", "~> 1.0.2"
+  gem "zuul_client", "~> 6.0.1"
+  gem "nuvi_session_store", "~> 0.1.0"
+  gem "nuvify", "~> 1.0.1"
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
