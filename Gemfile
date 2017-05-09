@@ -38,8 +38,12 @@ gem 'jbuilder', '~> 2.5'
 source 'https://xvYsU8J_ySFNyjXaBUyM@gem.fury.io/nuvi/' do
   gem 'nuvi_session_store', '~> 0.1.0'
   gem 'nuvify', '~> 1.0.1'
-  gem 'zohar', '~> 1.0.2'
+  # gem 'zohar', '~> 1.0.2'
   gem 'zuul_client', '~> 6.0.1'
+end
+
+source 'https://xvYsU8J_ySFNyjXaBUyM@gem.fury.io/nuvi/' do
+  gem 'zohar' 
 end
 
 group :development, :test do
